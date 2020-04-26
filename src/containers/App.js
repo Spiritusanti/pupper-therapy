@@ -1,54 +1,41 @@
 import React, { Component } from 'react';
-import Puppy from '../components/Puppy'
+import ImageList from '../components/ImageList'
+import SearchBar from '../components/SearchBar';
 
 class App extends Component {
-  constructor(props){
-    super(props);
+  constructor() {
+    super()
     this.state = {
-      error: null,
-      isLoaded: false,
-      items: []
-    };
-  }
-
-  componentDidMount() {
-    fetch('https://dog.ceo/api/breed/hound/images')
-    .then(res => res.json())
-    .then(
-      (result) => {
-        this.setState({
-          items: result.items
-        });
-      },
-      (error) => {
-        this.setState({
-          isLoaded: true,
-          error
-        });
-      }
-    )
-  }
-
-  render(){
-    const { error, isLoaded, items } = this.state;
-    if (error) {
-      return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
-      return <div>Loading...</div>
-    } else {
-      return (
-         <ul>
-           <Puppy />
-          {items.map(item => (
-            <li key={item.name}>
-              {item.name} {item.image}
-            </li>
-          ))}
-        </ul>
-      );
+      dogs: [],
+      searchfield: ''
     }
   }
 
-}
+  // componentDidMount() {
+  //   fetch('https://dog.ceo/api/breed/${}/images/random/10').then(response => {
+  //     return response.json();
+  //   }).then(url => {
+  //     this.setState({ dogs: url });
+  //   })
+  // }
 
+  onSearchChange = (event) => {
+    this.setState({ searchfield: event.target.value });
+  }
+
+  render() {
+    const { dogs, searchfield } = this.state;
+    const filterDogs = dogs.filter(dog => {
+      return dog.name.toLowerCase().includes(searchfield.toLowerCase());
+    })
+    return !dogs.length ?
+    <h1>Loading...</h1>:
+    (
+      <div>
+        <h1>Pupper Therapy</h1>
+        <SearchBar searchChange={this.onSearchChange}/>
+      </div>
+    )
+  }
+}
 export default App;
