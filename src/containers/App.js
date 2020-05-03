@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Dogs from '../components/Dogs';
-import { render } from '@testing-library/react';
 // import SearchBar from '../components/SearchBar';
 // `https://dog.ceo/api/breed/${breedName}/image/random/25`
 
@@ -15,14 +14,12 @@ const App = () => {
 
 
   const getDogs = async () => {
-    const response = await fetch("https://dog.ceo/api/breed/hound/images/random/3");
+    const response = await fetch("https://dog.ceo/api/breeds/image/random/25");
     const data = await response.json();
+    console.log(data)
     setDogs(data.message);
   }
-
-
-  render()
-    return(
+ return(
       <div className='App'>
         <h1 className='header'>Pupper Therapy</h1>
         <h3>How it works:</h3>
@@ -34,7 +31,7 @@ const App = () => {
           <button className='submit'>search</button>
         </form>
         {dogImages.map(dogImage => (
-          <Dogs image={dogImages}/>
+          <Dogs image={dogImage}/>
     ))}
       </div>
   )

@@ -4,7 +4,7 @@ const Dogs = ({image}) => {
     return(
         <div>
             <ul>
-           <img src={image} alt="Dog"/>
+           <img key="" src={image} alt="Dog"/>
            </ul>
         </div>
     );
