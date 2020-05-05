@@ -1,11 +1,10 @@
 import React from 'react';
+import './Dogs.css'
 
 const Dogs = ({image}) => {
     return(
         <div>
-            <ul>
-           <img key="" src={image} alt="Dog"/>
-           </ul>
+           <img className='image' src={image} alt="Dog"/>
         </div>
     );
 }
