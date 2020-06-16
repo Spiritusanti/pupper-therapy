@@ -44,7 +44,7 @@ const App = () => {
             <button className='submit'>search</button>
           </form>
         </div>
-        <div className='image-grid'>
+        <div className='image-grid '>
           {dogImages.map(dogImage => (
             <Dogs
               key={dogImage} 

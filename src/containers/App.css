@@ -10,10 +10,10 @@ form {
 
 
 .image-grid {
-   background-color: #142E54;
-   display: grid;
-   grid-template-columns: repeat(4, 25%);
-   grid-template-rows: auto;
-   justify-items: center;
-   align-items: center;
-   }
+    display: grid;
+    grid-template-columns: max-content;
+    grid-gap: 8px 8px;
+    grid-auto-flow: row dense;
+    box-sizing: border-box;
+    background-color: #4C668C;
+}
