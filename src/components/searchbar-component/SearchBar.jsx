@@ -1,14 +1,15 @@
 import React from 'react';
 
-const SearchBar = ({searchChange}) => {
+const SearchBar = ({breed}) => {
     return (
         <div className = 'pa2'>
             <input 
                 className = 'pa3 ba'
                 type='search' 
                 placeholder='search breed' 
-                onChange = {searchChange}
+                onChange = {breed}
             />
+            <button type='submit'>Search</button>
         </div>
     );
 }
