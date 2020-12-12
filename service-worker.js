@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pupper-therapy/precache-manifest.cf5d41f82eb930858ca497adfb6a97d9.js"
+  "/pupper-therapy/precache-manifest.979481874704fbdc737d07e72bc4969c.js"
 );
 
 self.addEventListener('message', (event) => {

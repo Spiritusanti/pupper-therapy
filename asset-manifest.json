@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/pupper-therapy/static/css/main.09f63cfe.chunk.css",
-    "main.js": "/pupper-therapy/static/js/main.379fd399.chunk.js",
-    "main.js.map": "/pupper-therapy/static/js/main.379fd399.chunk.js.map",
-    "runtime-main.js": "/pupper-therapy/static/js/runtime-main.f3652baf.js",
-    "runtime-main.js.map": "/pupper-therapy/static/js/runtime-main.f3652baf.js.map",
-    "static/js/2.d1e09ccb.chunk.js": "/pupper-therapy/static/js/2.d1e09ccb.chunk.js",
-    "static/js/2.d1e09ccb.chunk.js.map": "/pupper-therapy/static/js/2.d1e09ccb.chunk.js.map",
+    "main.js": "/pupper-therapy/static/js/main.3aeb4642.chunk.js",
+    "main.js.map": "/pupper-therapy/static/js/main.3aeb4642.chunk.js.map",
+    "runtime-main.js": "/pupper-therapy/static/js/runtime-main.26f5e0a8.js",
+    "runtime-main.js.map": "/pupper-therapy/static/js/runtime-main.26f5e0a8.js.map",
+    "static/js/2.c40cedbb.chunk.js": "/pupper-therapy/static/js/2.c40cedbb.chunk.js",
+    "static/js/2.c40cedbb.chunk.js.map": "/pupper-therapy/static/js/2.c40cedbb.chunk.js.map",
     "index.html": "/pupper-therapy/index.html",
-    "precache-manifest.cf5d41f82eb930858ca497adfb6a97d9.js": "/pupper-therapy/precache-manifest.cf5d41f82eb930858ca497adfb6a97d9.js",
+    "precache-manifest.979481874704fbdc737d07e72bc4969c.js": "/pupper-therapy/precache-manifest.979481874704fbdc737d07e72bc4969c.js",
     "service-worker.js": "/pupper-therapy/service-worker.js",
     "static/css/main.09f63cfe.chunk.css.map": "/pupper-therapy/static/css/main.09f63cfe.chunk.css.map",
-    "static/js/2.d1e09ccb.chunk.js.LICENSE.txt": "/pupper-therapy/static/js/2.d1e09ccb.chunk.js.LICENSE.txt"
+    "static/js/2.c40cedbb.chunk.js.LICENSE.txt": "/pupper-therapy/static/js/2.c40cedbb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f3652baf.js",
-    "static/js/2.d1e09ccb.chunk.js",
+    "static/js/runtime-main.26f5e0a8.js",
+    "static/js/2.c40cedbb.chunk.js",
     "static/css/main.09f63cfe.chunk.css",
-    "static/js/main.379fd399.chunk.js"
+    "static/js/main.3aeb4642.chunk.js"
   ]
 }
