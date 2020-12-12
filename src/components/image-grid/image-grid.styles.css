@@ -1,8 +1,10 @@
 .image-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 2fr 2fr; */
     background-color: #738152;
-    padding-left: 2em;
+    /* padding-left: 2em;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 1em; */
     }

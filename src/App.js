@@ -1,27 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderComponent from './components/header-component/header.component';
 import ImageGrid from './components/image-grid/image-grid.component';
-// import URLS from './components/image-grid/imageURLS';
 import './App.css';
 // `https://dog.ceo/api/breed/${query}/image/random/25`
 
-class App extends React.Component {
-  constructor(){
-    super();
-    this.state ={
-      images: []
-    }
-  }
+const App = () => {
+  const [images, setImages] = useState();
 
-  componentDidMount(){
-    fetch('https://dog.ceo/api/breeds/image/random/50')
+  useEffect(() => {
+    const fetchFunc = () => {fetch('https://dog.ceo/api/breeds/image/random/50')
     .then(response => response.json())
-    .then(data => this.setState({images: data.message}))
-    .then(console.log(this.state))
-  }
-
-  render() { 
-    const { images } = this.state
+    .then(data => setImages(data.message))
+    }
+    fetchFunc();
+  }, [setImages]);
+    
     return ( 
       <div className='app'>
         <HeaderComponent onChange='' />
@@ -31,6 +24,5 @@ class App extends React.Component {
       </div>
     )
   }
-} 
 
 export default App;
