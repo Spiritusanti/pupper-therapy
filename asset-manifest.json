@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pupper-therapy/static/css/main.09f63cfe.chunk.css",
+    "main.js": "/pupper-therapy/static/js/main.379fd399.chunk.js",
+    "main.js.map": "/pupper-therapy/static/js/main.379fd399.chunk.js.map",
+    "runtime-main.js": "/pupper-therapy/static/js/runtime-main.f3652baf.js",
+    "runtime-main.js.map": "/pupper-therapy/static/js/runtime-main.f3652baf.js.map",
+    "static/js/2.d1e09ccb.chunk.js": "/pupper-therapy/static/js/2.d1e09ccb.chunk.js",
+    "static/js/2.d1e09ccb.chunk.js.map": "/pupper-therapy/static/js/2.d1e09ccb.chunk.js.map",
+    "index.html": "/pupper-therapy/index.html",
+    "precache-manifest.cf5d41f82eb930858ca497adfb6a97d9.js": "/pupper-therapy/precache-manifest.cf5d41f82eb930858ca497adfb6a97d9.js",
+    "service-worker.js": "/pupper-therapy/service-worker.js",
+    "static/css/main.09f63cfe.chunk.css.map": "/pupper-therapy/static/css/main.09f63cfe.chunk.css.map",
+    "static/js/2.d1e09ccb.chunk.js.LICENSE.txt": "/pupper-therapy/static/js/2.d1e09ccb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3652baf.js",
+    "static/js/2.d1e09ccb.chunk.js",
+    "static/css/main.09f63cfe.chunk.css",
+    "static/js/main.379fd399.chunk.js"
+  ]
+}
